@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Loans</title>
+  </head>
+  <body>
+    <h1>Loans</h1>
+    <a href="/add">Add Loan</a>
+    <ul>
+      {% for loan in loans %}
+      <li>{{ loan[1] }} borrowed by {{ loan[2] }} on {{ loan[3] }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

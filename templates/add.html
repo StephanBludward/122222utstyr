@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Add Loan</title>
+  </head>
+  <body>
+    <h1>Add Loan</h1>
+    <form method="post">
+      Equipment:<br />
+      <input type="text" name="equipment" required /><br /><br />
+      Borrower:<br />
+      <input type="text" name="borrower" required /><br /><br />
+      Loan Date:<br />
+      <input type="date" name="loan_date" required /><br /><br />
+      <input type="submit" value="Add Loan" />
+    </form>
+    <br /><a href="/">Back</a>
+  </body>
+</html>
