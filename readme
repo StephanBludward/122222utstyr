@@ -1,0 +1,70 @@
+Utstyrslån Web App
+Dette prosjektet er en enkel webapplikasjon laget med Python (Flask), SQLite og HTML/CSS. Applikasjonen lar brukere registrere og returnere utstyr, og er laget som en del av eksamensoppgaven i faget Informasjonsteknologi.
+
+Tema og formål
+Formålet med prosjektet er å utvikle et enkelt system som IT-avdelingen kan bruke til å holde oversikt over utstyrslån. Applikasjonen gjør det mulig å registrere hvem som har lånt hvilket utstyr, og når det eventuelt er returnert.
+
+Kompetansemål
+Prosjektet dekker følgende kompetansemål fra læreplanen:
+
+Brukerstøtte: Legge til rette for og veilede brukere ved hjelp av digitale løsninger.
+
+Driftstøtte: Bruke og administrere et databasesystem for å lagre og hente data.
+
+Utvikling: Lage og tilpasse applikasjoner ved hjelp av programmering og grensesnittutvikling.
+
+Teknologier brukt
+Python 3
+
+Flask (web-rammeverk)
+
+SQLite (database)
+
+HTML og CSS
+
+Filstruktur
+
+/utstyrslan/
+│
+├── app.py               - Flask-applikasjonen
+├── database.db          - SQLite-database
+├── requirements.txt     - Liste over nødvendige Python-pakker
+│
+├── /templates/          - HTML-filer (index.html, add.html)
+├── /static/             - CSS-filer (style.css)
+Hvordan applikasjonen fungerer
+Brukeren åpner applikasjonen i nettleseren.
+
+Startside viser en oversikt over nåværende lån.
+
+Brukeren kan registrere et nytt lån ved å fylle ut navn, type utstyr og dato.
+
+Når utstyret leveres tilbake, kan lånet markeres som returnert, og det fjernes fra listen.
+
+Kjøre lokalt
+Installer Flask:
+
+pip install flask
+Kjør applikasjonen:
+
+python app.py
+Åpne nettleseren og gå til:
+
+http://127.0.0.1:5000
+Eget arbeid og refleksjon
+Jeg har laget både bakdelen og framsiden av applikasjonen selv.
+
+Jeg brukte SQLite for å lære hvordan en enkel database fungerer.
+
+Jeg kan forklare hvordan brukeren registrerer et lån og hvordan informasjonen lagres og hentes fra databasen.
+
+Jeg har lært hvordan Flask fungerer, og hvordan man lager nettsider med dynamisk innhold.
+
+Ferdigheter vist
+Grunnleggende programmering med Python og Flask
+
+Arbeid med HTML-skjema og maler
+
+Bruk av database for å lagre informasjon
+
+Forståelse av hvordan digitale løsninger kan forenkle arbeidsprosesser
